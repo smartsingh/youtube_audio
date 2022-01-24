@@ -54,9 +54,7 @@ class video:
         finished_file.tag.images.set(type_=3, img_data=self.cover, mime_type="image/jpeg")
         finished_file.tag.save(version=eyed3.id3.ID3_V2_3)
         
-        print(f"Finished downloading {self.track_title}")
-        os.system('afplay /System/Library/Sounds/Glass.aiff')
-    
+        print(f"Finished downloading {self.track_title}")    
 
 class playlist:
     
